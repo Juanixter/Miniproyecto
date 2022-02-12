@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Juan Carlos Martínez</title>
+</head>
+<body>
+    <header>
+        <section id="Titulo">
+            <img src="./imagenes/Logo.png" alt="Logo" />
+            <h1>Juan Carlos Martínez</h1>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#hero">HERO</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="skills">SKILLS</a></li>
+                <li><a href="about-me">ABOUT ME</a></li>
+                <li><a href="contact-me">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h3 id="hero">Hero</h3>
+        <div class="slideshow">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./imagenes/hero1.PNG" class="imagen-slideshow">
+                <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./imagenes/hero2.JPG" class="imagen-slideshow">
+                <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./imagenes/hero3.jpg" class="imagen-slideshow">
+                <div class="text">Caption Three</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div id="selector-puntos">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <h3 id="experience">Experinece</h3>
+        <section class="proyecto">
+            <div>
+                <h4>Pong</h4>
+                <p>07/06/2018</p>
+                <h5>Tecnologías utilizadas</h5>
+                <ul>
+                    <li>HTML y CSS</li>
+                    <li>JavaScript</li>                
+                    <li>VSCode</li>                
+                </ul>
+                <a href="https://www.ponggame.org/" target="_blank">Vistita Pong</a>
+            </div>
+            <img src="./imagenes/pong.PNG" alt="pong"/>
+        </section>
+        <section class="proyecto">
+            <div>
+                <h4>Runescape</h4>
+                <p>24/09/2019</p>
+                <h5>Tecnologías utilizadas</h5>
+                <ul>
+                    <li>HTML y CSS</li>
+                    <li>JavaScript</li>                             
+                </ul>
+                <a href="https://play.runescape.com/" target="_blank">Vistita Runescape</a>
+            </div>
+            <img src="./imagenes/runescape.PNG" alt="runescape"/>
+        </section>
+        <section class="proyecto">
+            <div>
+                <h4>Yummy</h4>
+                <p>24/05/2020</p>
+                <h5>Tecnologías utilizadas</h5>
+                <ul>
+                    <li>Java</li>
+                    <li>VSCode</li>                             
+                </ul>
+                <a href="https://www.yummysuperapp.com/" target="_blank">Vistita Yummy</a>
+            </div>
+            <img src="./imagenes/yummy.PNG" alt="yummy"/>
+        </section>
+        <h3 id="skills">Skills</h3>
+        <section id="habilidades">
+
+        </section>
+        <h3 id="about-me">About Me</h3>
+        <img src="./imagenes/foto.jpg" alt="Foto" />
+        <section id="description">
+            <h4>Juan Carlos Martínez Ordaz</h4>
+            <h6>Objetivos a corto plazo</h6>
+            <ul>
+                <li>Graduarme como Ingeniero de Sistemas</li>
+                <li>Aprender más sobre JavaScript y React</li>
+            </ul>
+            <h6>Objetivos a plazo</h6>
+            <ul>
+                <li>Volverme full stack developer</li>
+                <li>Trabajar en el exterior</li>
+            </ul>
+            <h6>Hobbies</h6>
+            <ul>
+                <li>Videojuegos</li>
+                <li>Anime</li>
+                <li>Magic: The Gathering</li>
+            </ul>
+        </section>
+        <h3 id="contact-me">Contact Me</h3>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="correo">Correo:</label><br>
+            <input type="text" id="correo" name="correo"><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="5" cols="50"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <h4>Info</h4>
+        <ul>
+            <li><a href="https://wa.me/584242067885" target="_blank">Contactame por whatsapp</a></li>
+            <li><a href="https://twitter.com/Juanixter" target="_blank">Ver twitter</a></li>
+            <li><a href="https://github.com/Juanixter" target="_blank">Ver github</a></li>
+        </ul>
+    </footer>
+    <script scr="main.js"></script>
+</body>
+</html>
