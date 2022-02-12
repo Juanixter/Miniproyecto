@@ -31,10 +31,15 @@ header {
 
 .titulo {
     margin-bottom: 1rem;
+    margin-left: 1rem;
 }
 
 .titulo h1 {
     display: inline-block;
+    vertical-align: top;
+    font-size: 3rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 .titulo img {
@@ -57,7 +62,9 @@ nav ul li a {
     color:antiquewhite;
 }
 
-
+nav ul li a:hover {
+    color:wheat;
+}
 
 .imagen-slideshow {
     width: 100%
@@ -175,7 +182,7 @@ nav ul li a {
 }
 
 .proyecto div a:hover {
-    color:#3E3E3E;
+    color: black;
 }
 
 #habilidades {
@@ -229,6 +236,51 @@ nav ul li a {
 
 #description ul li {
     margin: 0.5rem 0
+}
+
+form {
+    margin: 0 1rem 3rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    background-color: #bbb;
+    font-family: Arial, sans-serif;
+}
+
+#submit {
+    margin-top: 1rem;
+    width: 5rem;
+    height: 1.5rem;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#mensaje {
+    resize: none;
+    background-color: #bbb;
+}
+
+footer h4 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+footer ul {
+    margin-left: 2rem;
+}
+
+footer ul li {
+    margin: 0.5rem 0;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color:#bbb;
+}
+
+footer ul li a:hover {
+    color: wheat;
 }
 
 

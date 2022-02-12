@@ -51,3 +51,28 @@ for (let i = 0; i < skills["competencias"].length; i++) {
     <li class="competencia">${skills["competencias"][i]}</li>
   `;
 }
+
+const formulario = document.getElementById("contacto");
+const nombre = document.getElementById('nombre');
+const correo = document.getElementById('correo');
+const mensaje = document.getElementById('mensaje');
+
+formulario.addEventListener('submit', function(event){
+  event.preventDefault();
+
+  const nombreValue = nombre.value;
+  const correoValue = correo.value;
+  const mesajeValue = mensaje.value;
+
+  correoRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+  if (correoRegex.test(correoValue) && correoValue != "") {
+    var link = "mailto:j27790605@correo.unimet.edu.ve"
+    + "?cc=" + correoValue
+    + "&subject=" + encodeURIComponent("Respuesta portafolio")
+    + "&body=" + encodeURIComponent(mesajeValue);
+    window.open(link, "_blank").focus();
+  } else {
+    correo.value = "";
+    alert("Correo Inválido");
+  }
+})
