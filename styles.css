@@ -42,10 +42,6 @@ header {
     border-radius: 50%;
 }
 
-nav {
-
-}
-
 nav ul {
     width: 80%;
     margin: 0 auto;
@@ -138,6 +134,48 @@ nav ul li a {
 }
 #selector-puntos {
     text-align: center;
+}
+
+.proyecto {
+    background-color: #C4C4C4;
+    margin: 2rem auto;
+}
+
+.proyecto div {
+    color: black;
+    display: inline-block;
+    width: 30rem;
+    margin-left: 2rem;
+    vertical-align: top;
+}
+
+.proyecto img {
+    width: 26.76rem;
+    background-color: red;
+}
+
+.proyecto div h4 {
+    font-size: 3rem;
+}
+
+.proyecto div p {
+    margin-bottom: .7rem;
+}
+
+.proyecto div h5 {
+    font-size: 1rem;
+}
+
+.proyecto div ul {
+    margin-bottom: 1rem;
+}
+
+.proyecto div a {
+    text-decoration: none;
+}
+
+.proyecto div a:hover {
+    color:#3E3E3E;
 }
 
 
