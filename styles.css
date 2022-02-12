@@ -178,6 +178,25 @@ nav ul li a {
     color:#3E3E3E;
 }
 
+#habilidades {
+    width: 29rem;
+    margin: 1rem 1rem;
+    display: inline-block;
+}
+
+.lenguaje {
+    margin: 1rem 0;
+}
+
+#competencias {
+    float: left;
+    margin: 1rem 1rem;
+}
+
+.competencia {
+    margin: 1rem 1rem;
+}
+
 
 
 

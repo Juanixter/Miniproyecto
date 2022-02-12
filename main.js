@@ -26,3 +26,28 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
+
+const skills = {
+  lenguajes: [["Python", 90],["Java", 75], ["HTML y CSS", 45], ["JavaScript", 35]],
+  competencias: ["Paciencia", "Perseverancia", "Honestidad"]
+}
+
+const habilidades = document.getElementById("habilidades");
+
+habilidades.innerHTML += `<h4>Lenguajes de programación:</h4>`;
+
+for (let i = 0; i < skills["lenguajes"].length; i++) {
+  habilidades.innerHTML += `
+    <section class="lenguaje">
+      <p>${skills["lenguajes"][i][0]} ... ${skills["lenguajes"][i][1]}%</p>
+    </section>
+  `;
+}
+
+const competenciasLista = document.querySelector('#competencias ul');
+
+for (let i = 0; i < skills["competencias"].length; i++) {
+  competenciasLista.innerHTML += `
+    <li class="competencia">${skills["competencias"][i]}</li>
+  `;
+}
