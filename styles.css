@@ -197,6 +197,39 @@ nav ul li a {
     margin: 1rem 1rem;
 }
 
+#foto_personal {
+    width: 20rem;
+    display: inline-block;
+    margin: 1rem 1rem;
+    background-color: aqua;
+    border-radius: 20%;
+}
+
+#description {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2rem;
+}
+
+#description h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+#description h6 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#description ul {
+    margin-bottom: 1rem;
+}
+
+#description ul li {
+    margin: 0.5rem 0
+}
 
 
 
